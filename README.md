@@ -66,11 +66,13 @@
 
 - Active reviewer of Journal of Applied Remote Sensing (SPEI.) (_2022-2024_)
   
-- Attend and participate in Applications/ Limitations of AI and Machine Learning Water Research Foundation webinar (_May 2021_)
+- Attend and participate in "Applications/ Limitations of AI and Machine Learning Water Research Foundation webinar" (_May 2021_)
   
-- Presenting the article orally in 12 National Civil Conferences. (_2021_)
+- Presenting the article orally in 12th National Civil Conferences. (_2021_)
   
 - Supervised Learning with Python Certificate (Data Camp Course)  (_2024_)
+
+- Attend and participate in "Innovative concepts and methods for geoscience, remote sensing and beyond webinar" (_2024_)
 
 ### _Honors_
 
@@ -88,14 +90,15 @@
   
 -	Organizer of three successful workshops about professional article writing and journal refereeing.
   
--	The founder and manager of the Independent International Group of **EnvML Research Hub** (Counseling and supporting students with scientific and research subjects).
+-	The founder and manager of the Independent International Group of **Environment Machine Learning Research Hub** ( EnvML: Counseling and supporting students with scientific and research subjects).
 
 ## Skills and Interests
 
 ### _Languages_
 
--	Farsi: Native
 -	Academic English: Professional working proficiency
+
+- Farsi: Native 
 
 ### _Computer Skills_
 
@@ -103,7 +106,7 @@
   
 -	R Programming language – _Upper Intermediate user_
   
--	Google Earth Engine (GEE) – _Intermediate user_
+-	Google Earth Engine (GEE) – _Upper Intermediate user_
   
 -	MATLAB - _Intermediate user_
   
@@ -113,7 +116,9 @@
   
 -	ArcGIS and QGIS – _Intermediate user_
   
--	WaterGEMS- _Intermediate user_
+-	WaterGEMS - _Intermediate user_
+  
+-	C++ - _familiar_
 
 ### _Areas of expertise and Interests_
 
@@ -183,5 +188,5 @@
 
 -	**Dr. Behnaz Bigdeli**, Assistant Professor, Thesis Supervisor, Department of Photogrammetry and Remote Sensing, Shahrood University of Technology, Iran | Email: bigdeli@shahroodut.ac.ir
 
--	**Dr. Nasrin Fathollahzadeh Attar**, Ph.D. of Water Resources Engineering, University of Padova, Italy | Email: nasrin.fathollahzadehattar@unipd.it
+-	**Dr. Nasrin Fathollahzadeh Attar**, Postdoc of Water Resources Engineering, University of Texas at Arlington | Email: nasrin.attar@uta.edu
 
