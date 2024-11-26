@@ -17,10 +17,10 @@
 
 ## Education	
 
-- M.S., Water and Hydraulic Structures	| Shahrood University of Technology (_2018-2021_)  GPA: 3.18/4   Thesis GPA: 4 / 4
+- M.S., Water and Hydraulic Structures	| Shahrood University of Technology (_2018-2021_)  GPA: 3.18/4
 
              		
-- B.S., Civil Engineer | The University of Gonabad (_2014-2018_)   GPA: 3.45/4
+- B.S., Civil Engineer | The University of Gonabad (_2014-2018_)
 
 ## International Publications
 
@@ -152,7 +152,7 @@
 
 ### Application of R in Remote Sensing (_Dynamics of Vegetation_)
 [View](https://github.com/MostafaSaghafi/Application_of_R_in_RemoteSensing.git)
-<p align="justify">This project illustrates how to read, subset, and process a Sentinel-2 multispectral image while analyzing the dynamics of vegetation in R.</p> 
+<p align="justify">The use of R in remote sensing offers a powerful and efficient approach to analyzing vegetation dynamics, particularly by utilizing multispectral data from platforms like Sentinel-2. This project illustrates the process of reading, subsetting, and processing Sentinel-2 multispectral imagery with R, emphasizing its capabilities in vegetation analysis. By leveraging established libraries and workflows within the R environment, the study demonstrates techniques to extract key vegetation indices, track temporal changes, and derive insights into ecosystem health. The combination of R’s analytical capabilities with remote sensing data empowers researchers and practitioners to better understand vegetation dynamics, supporting fields such as agriculture, forestry, and environmental monitoring.</p> 
 
 ### Extracting Brightness Temperature from Level 3 SMOS (NetCDF Files) Using Python for Specific Coordinates 
 [View](https://github.com/MostafaSaghafi/Level3_SMOS_Brightness_Temperature.git)
@@ -164,7 +164,7 @@
 
 ### Harmful Algal Bloom (HAB) Classification Using Sentinel2 Dataset
 [View](https://github.com/MostafaSaghafi/Harmful_Algal_Bloom_HAB_Classification_Sentinel2_Data.git)
-<p align="justify">This project details the process of classifying Harmful Algal Blooms (HAB) using Sentinel-2 satellite imagery. The workflow encompasses data preparation, image processing, chlorophyll index calculation, and machine learning classification techniques.</p> 
+<p align="justify">The project focuses on classifying Harmful Algal Blooms (HAB) using the Sentinel-2 satellite dataset within the Google Earth Engine (GEE) platform. The workflow encompasses several essential steps, starting with the preparation and pre-processing of high-resolution Sentinel-2 imagery to ensure data quality and relevance. The methodology involves calculating a chlorophyll index, a key indicator for detecting and analyzing algal concentrations in aquatic ecosystems. By applying advanced machine learning classification techniques, the project identifies and maps HAB occurrences with greater precision. This approach underscores the integration of remote sensing and computational tools to tackle environmental challenges, providing an efficient and scalable solution for HAB monitoring and management.</p> 
 
 ### Calculate the SPI SPEI Drought Index (NetCDF Files)
 [View](https://github.com/MostafaSaghafi/SPI_SPEI_NetCDF.git)
@@ -185,6 +185,35 @@
 ### Detection of Wildfire Trends Using NBR index and the BFAST Algorithm in R
 [View](https://github.com/MostafaSaghafi/Bfast_NBR.git)
 <p align="justify">The detection of wildfire trends can be effectively accomplished through the integration of the Normalized Burn Ratio (NBR) index and the Breaks For Additive Season and Trend (BFAST) algorithm. The NBR index acts as a robust tool for identifying burned areas by analyzing satellite imagery, while BFAST aids in detecting abrupt changes in time-series data, enabling researchers to accurately pinpoint disturbances. Implementing these methods in R allows for the visualization of the number of detected disturbances over time, offering critical insights into wildfire patterns and their implications for ecosystem management and policy planning.</p> 
+
+### Land Subsidence using Sentinel-1 and Sentinel-2
+[View](https://github.com/MostafaSaghafi/LandSubsidence.git)
+<p align="justify">Land subsidence, a significant geohazard, can be effectively monitored using remote sensing techniques such as Synthetic Aperture Radar (SAR) and optical imagery. By utilizing Sentinel-1 and Sentinel-2 data within the Google Earth Engine platform, researchers can analyze reductions in SAR amplitude to pinpoint areas undergoing subsidence. This method enables high-resolution, large-scale assessments, offering critical insights for managing risks related to infrastructure, water resources, and urban development in affected regions. The integration of these datasets provides an efficient and cost-effective solution for continuous monitoring and early detection.</p>
+
+### Calculate the Surface Water Area using Sentinel-2 by MNDWI index in GEE
+[View](https://github.com/MostafaSaghafi/Surface_Water_Area.git)
+<p align="justify">The calculation of Surface Water Area using the Modified Normalized Difference Water Index (MNDWI), derived from Sentinel-2 imagery, can be efficiently conducted within Google Earth Engine (GEE). By utilizing the green and shortwave infrared (SWIR) bands, MNDWI enhances water body detection by reducing interference from built-up areas and vegetation. GEE serves as a robust platform for processing large-scale satellite data, facilitating accurate identification and quantification of surface water areas over time. This approach supports environmental monitoring, water resource management, and climate impact assessments.</p>
+
+### Extract NBR index using GEE (SLC issue resolved)
+[View](https://github.com/MostafaSaghafi/NBR_GEE.git)
+<p align="justify">This code illustrates the extraction of the Normalized Burn Ratio (NBR) over a 20-year period using Landsat-5, Landsat-7, and Landsat-8 imagery within the Google Earth Engine (GEE) platform. To ensure data quality, the Scan Line Corrector (SLC) issue in Landsat-7 imagery was effectively addressed using the focal_mean algorithm. This method guarantees accurate and consistent NBR calculations across the dataset, offering reliable insights for long-term analysis.</p>
+
+### Extract the climate indices
+[View](https://github.com/MostafaSaghafi/Climate_Indices.git)
+<p align="justify">The extraction of climate indices is essential for monitoring and understanding environmental changes over time. Using Landsat-8 satellite imagery, indices such as the Modified Normalized Difference Water Index (MNDWI), Normalized Difference Water Index (NDWI), Normalized Difference Built-up Index (NDBI), and Normalized Difference Snow Index (NDSI) can be derived to evaluate water bodies, urbanization, and snow cover, respectively. Furthermore, key climatic parameters like precipitation and Land Surface Temperature (LST) can be analyzed to offer insights into regional climate patterns and their variations. By processing and analyzing a decade of Landsat-8 data, these indices empower researchers and policymakers to track long-term environmental trends, assess the impacts of climate change, and plan for sustainable resource management, ensuring data-driven decision-making for environmental resilience.</p>
+
+### Flood Detection and Flood Area
+[View](https://github.com/MostafaSaghafi/Flood_Detection_GEE.git)
+<p align="justify">Detecting flood inundation and calculating flooded areas is a critical application of remote sensing systems, particularly using Sentinel-1 Synthetic Aperture Radar (SAR) data in Google Earth Engine (GEE). This process involves essential steps to ensure accuracy and precision, starting with filtering and preprocessing the radar imagery to remove irrelevant data and reduce speckle noise, a common issue in SAR datasets. The refined data is then analyzed to differentiate between water bodies and flood-affected areas, leveraging the sensor's capability to penetrate cloud cover and provide consistent observations under all weather conditions. The results are subsequently visualized through GEE's mapping tools, enabling clear identification of impacted regions, and can be exported for further analysis and integration into flood management systems. This workflow offers an efficient and robust approach for detecting floods and estimating their extent, supporting disaster response and mitigation efforts.</p>
+
+### Land Surface Temperature (LST) using Landsat-8
+[View](https://github.com/MostafaSaghafi/Land_Surface_Temperature.git)
+<p align="justify">Land Surface Temperature (LST) is a vital parameter for understanding surface energy balance, urban heat island effects, and environmental changes. Using Landsat 8 Surface Reflectance Tier 2 imagery, LST can be calculated and analyzed over time to evaluate temporal and spatial patterns. This process involves deriving LST from the thermal infrared bands of Landsat 8, applying atmospheric corrections, and converting the data into temperature values using established algorithms. By creating an LST time series, researchers can visualize trends, identify anomalies, and monitor changes in land surface conditions. The integration of Landsat 8's high-resolution data with advanced geospatial tools facilitates accurate and detailed analysis, supporting diverse applications in climate studies, urban planning, and environmental monitoring.</p>
+
+### 1-dimensional-elasto-dynamics
+[View](https://github.com/MostafaSaghafi/1-dimensional-elasto-dynamics.git)
+<p align="justify">The MATLAB code presented focuses on the numerical solution of 1-dimensional elasto-dynamics problems using the finite element method (FEM). This implementation models the dynamic behavior of elastic materials by discretizing the governing equations into finite elements, allowing for accurate simulation of wave propagation and deformation over time. The code employs standard FEM procedures, including the formulation of stiffness and mass matrices, along with time integration schemes to solve the resulting system of equations. This approach is particularly valuable for analyzing linear elastic systems under dynamic loading, offering an efficient and versatile tool for engineers and researchers in structural dynamics and wave mechanics.</p>
+
 
 # References
 
