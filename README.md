@@ -17,8 +17,10 @@
 
 ## Education	
 
-- M.S., Water and Hydraulic Structures	| Shahrood University of Technology (_2018-2021_)	 			        		
-- B.S., Civil Engineer | The University of Gonabad (_2014-2018_)
+- M.S., Water and Hydraulic Structures	| Shahrood University of Technology (_2018-2021_)  GPA: 3.18/4   Thesis GPA: 4 / 4
+
+             		
+- B.S., Civil Engineer | The University of Gonabad (_2014-2018_)   GPA: 3.45/4
 
 ## International Publications
 
