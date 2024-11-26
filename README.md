@@ -1,10 +1,10 @@
 # About
 
-<p align="justify">I am Mostafa Saghafi, the manager and founding member of the Independent International Group for EnvML Research Hub. Throughout my academic and professional career, I have developed a strong enthusiasm for tackling the challenges in multidisciplinary disciplines. My experience has included navigating challenges that have influenced my approach to solutions. I really think that critical thinking is necessary to break apart difficult problems into doable parts. Using energy and tenacity as my compass, I have overcome several obstacles that have presented themselves. Besides, I understand how crucial good communication is to reaching team goals. Strong relationships encourage cooperation and creativity qualities that are critical for any group's success. I am dedicated to using these principles at EnvML Research Hub as we work to have a significant impact in our different fields.</p>
+<p align="justify">I am Mostafa Saghafi, the manager and founding member of the Independent International Group for EnvML Research Hub. Throughout my academic and professional career, I have cultivated a strong passion for addressing challenges in multidisciplinary fields. My experience has shaped my approach to problem-solving, emphasizing the importance of critical thinking to break down complex issues into manageable components. Guided by energy and determination, I have successfully navigated numerous obstacles. Moreover, I recognize the vital role effective communication plays in achieving team objectives. Strong relationships foster collaboration and innovation, qualities essential for any group's success. I am committed to applying these principles at EnvML Research Hub as we strive to make a meaningful impact in our diverse fields.</p>
 
 # My background and history
 
-<p align="justify">I obtained my bachelor's degree from Gonabad University, where I developed a comprehensive comprehension of the fundamental principles of civil engineering. This fundamental experience served as the foundation for my master's degree at Shahrood University of Technology, during which I furthered my understanding of hydraulic structures and water engineering. During my master's studies, I had the opportunity to work on research with distinguished professors Ahmad Ahmadi and Behnaz Bigdeli. My thesis, "Surface Water Body Detection and Flood Monitoring Using Fusion of Multiple Remote Sensing Data", examined novel methods for monitoring water bodies and assessing flood risks. The primary concept of my research emphasized the advantages of fusion multispectral sensors and Synthetic Aperture Radar (SAR) to monitor flood events and detect surface water. We used a comprehensive approach that included data fusion, time series analysis, supervised machine learning techniques, and decision making to improve the accuracy and usefulness of systems meant to detect surface water and monitor floods. This work not only enhanced the academic community's knowledge but also underscored the critical role that advanced technologies play in addressing water management challenges. I remain committed to leveraging my academic background and research experience to contribute to the advancement of environmental disaster and civil engineering as I progress in my professional life.</p> 
+<p align="justify">I earned my bachelor's degree from Gonabad University, where I gained a solid understanding of the core principles of civil engineering. This foundational knowledge paved the way for my master's degree at Shahrood University of Technology, where I deepened my expertise in hydraulic structures and water engineering. During my master's studies, I had the privilege of collaborating on research with esteemed professors Ahmad Ahmadi and Behnaz Bigdeli. My thesis, titled "Surface Water Body Detection and Flood Monitoring Using Fusion of Multiple Remote Sensing Data," explored innovative methods for monitoring water bodies and assessing flood risks. The central focus of my research highlighted the benefits of integrating multi-spectral sensors and Synthetic Aperture Radar (SAR) to monitor flood events and detect surface water. We adopted a comprehensive approach that incorporated data fusion, time series analysis, supervised machine learning techniques, and decision-making processes to enhance the accuracy and effectiveness of systems designed for surface water detection and flood monitoring. This work not only contributed to the academic community's understanding but also emphasized the vital role of advanced technologies in tackling water management challenges. I remain dedicated to applying my academic background and research expertise to further the fields of environmental disaster management and civil engineering as I advance in my professional journey.</p> 
 
 ## Contact Information
 
@@ -13,6 +13,7 @@
 - [**Google Scholar**](https://scholar.google.com/citations?user=4F3m028AAAAJ&hl=en)
 - [**Researchgate**](https://www.researchgate.net/profile/Mostafa-Saghafi-2)
 - [**YouTube**](https://youtube.com/@earthremotesensing?si=CUxyIhehJXJSGv0a)
+- [**X**](https://x.com/Mostafasaghafi1)
 
 ## Education	
 
@@ -74,6 +75,8 @@
 
 - Attend and participate in "Innovative concepts and methods for geoscience, remote sensing and beyond webinar" (_2024_)
 
+- Attend and participate in “Satellite Remote Sensing for the Improved Study of Climate Change Impacts on the Water Cycle” by Prof. Fayne (_2024_)
+
 ### _Honors_
 
 -	Ranked 3rd among 15 M.Sc. Student of Water and Hydraulic Structure at Shahrood University of Technology (_2021_).
@@ -90,7 +93,7 @@
   
 -	Organizer of three successful workshops about professional article writing and journal refereeing.
   
--	The founder and manager of the Independent International Group of **Environment Machine Learning Research Hub** ( EnvML: Counseling and supporting students with scientific and research subjects).
+- The founder and manager of the independent international group, Environment Machine Learning Research Hub (_advising students on scientific and research topics_).
 
 ## Skills and Interests
 
@@ -118,27 +121,26 @@
   
 -	WaterGEMS - _Intermediate user_
   
+- High-Performance Computing (HPC) – _Intermediate user_
+  
 -	C++ - _familiar_
 
 ### _Areas of expertise and Interests_
 
--	Land Use and Land Cover (LULC)
+-	Time Series Analysis of Surface Water, Snow, Vegetation, Wildfire, Flooded Areas, Soil Moisture
   
--	Climate Change Modeling
+-	Landsat, Sentinel-2, Sentinel-1, MoDIS, SMOS, and SMAP products
   
--	Time Series Analysis of Surface Water, Snow, Vegetation, Wildfire, and Flooded Areas
+-	Remote Sensing Data Fusion and Ensemble Methods
   
--	Natural disaster zoning with machine learning
+-	Land Use and Land Cover Changes (LULC)
   
--	Land subsidence detecting and monitoring
+-	Application of Machine Learning in Climate Changes
   
--	Application of machine learning in climate changes
+-	Supervised and Unsupervised Land Classifications / Regressions
   
--	Landsat data series, Sentinel-2, Sentinel-1, MODIS, SMOS, and SMAP products
-  
--	Supervised and Unsupervised Land Classifications / Regressions (_Machine Learning Approaches_)
-  
--	Remote Sensing Data Fusion and Decision Fusion (_Ensembled Approaches_)
+-	Land Subsidence Detecting and Monitoring (InSAR)
+
 
 ### _Personal Interests_
 
