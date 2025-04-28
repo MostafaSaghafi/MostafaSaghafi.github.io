@@ -1,0 +1,1107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa Saghafi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a5d7a',
+                        secondary: '#7cb6c8',
+                        accent: '#60a665',
+                        dark: '#161b22',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bg-pattern {
+            background-color: #f9fafb;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dbeafe' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .timeline-container {
+            border-left: 2px solid #0a5d7a;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid #0a5d7a;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">Mostafa Saghafi<span class="text-accent">.</span></a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-primary transition">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                <a href="#experience" class="text-gray-600 hover:text-primary transition">Experience</a>
+                <a href="#publications" class="text-gray-600 hover:text-primary transition">Publications</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary transition">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+            </div>
+            
+            <button id="menu-btn" class="md:hidden text-gray-600 hover:text-primary">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#home" class="text-gray-600 hover:text-primary py-2 transition">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-primary py-2 transition">About</a>
+                <a href="#experience" class="text-gray-600 hover:text-primary py-2 transition">Experience</a>
+                <a href="#publications" class="text-gray-600 hover:text-primary py-2 transition">Publications</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary py-2 transition">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary py-2 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="bg-pattern min-h-screen flex items-center">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary">
+                        Mostafa Saghafi
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-medium mb-8 text-gray-700">
+                        Environmental Data Scientist & Climate Change</span> Specialist
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl">
+                        Environmental Data Scientist specializing in climate change models for surface water, flood, evapotranspiration using remote sensing & machine learning.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#about" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition duration-300">
+                            Learn More
+                        </a>
+                        <a href="#contact" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/5 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl"></div>
+                        <img src="img/MS.png" alt="Mostafa Saghafi" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-xl relative z-10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">About Me</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 text-justify">I’m really interested in being an environmental data scientist, especially using remote sensing technology to tackle important issues related to climate change and environmental sustainability.  I analyze and monitor surface water, detect floods, assess water quality, study soil moisture, evotranspiration, and understand vegetation dynamics. My goal is to provide insights that help manage the changing landscapes of our planet.  I use my skills in Python and R to create strong models and workflows that help process and understand complex datasets, making sure we handle environmental issues accurately and efficiently.  I have some technical skills that I use as a peer reviewer for top environmental journals, where I look at new research closely to help improve the scientific community as a whole.  I'm really interested in figuring out how to detect changes in surface conditions and coming up with new ideas for sustainable practices. I'm dedicated to learning more about how our planet works.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12"> <!-- "grid grid-cols-1 md:grid-cols-2 gap-12 items-center" -->
+                <div>
+                    <<p class="text-gray-700 mb-6 leading-relaxed text-justify">
+                        Throughout my academic and professional career, I have cultivated a strong passion for addressing challenges in multidisciplinary fields. My experience has shaped my approach to problem-solving, emphasizing the importance of critical thinking to break down complex issues into manageable components. Guided by energy and determination, I have successfully navigated numerous obstacles. Moreover, I recognize the vital role effective communication plays in achieving team objectives. Strong relationships foster collaboration and innovation, qualities essential for any group's success.   
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-justify">  
+                        I earned my bachelor's degree from Gonabad University, where I gained a solid understanding of the core principles of civil engineering. This foundational knowledge paved the way for my master's degree at Shahrood University of Technology, where I deepened my expertise in hydraulic structures and water engineering. During my master's studies, I had the privilege of collaborating on research with esteemed professors Ahmad Ahmadi and Behnaz Bigdeli. My thesis, titled "Surface Water Body Detection and Flood Monitoring Using Fusion of Multiple Remote Sensing Data," explored innovative methods for monitoring water bodies and assessing flood risks. The central focus of my research highlighted the benefits of integrating multi-spectral sensors and Synthetic Aperture Radar (SAR) to monitor flood events and detect surface water.
+                    </p>
+                    <<p class="text-gray-700 mb-6 leading-relaxed text-justify">  
+                        We adopted a comprehensive approach that incorporated data fusion, time series analysis, supervised machine learning techniques, and decision-making processes to enhance the accuracy and effectiveness of systems designed for surface water detection and flood monitoring. This work not only contributed to the academic community's understanding but also emphasized the vital role of advanced technologies in tackling water management challenges. I remain dedicated to applying my academic background and research expertise to further the fields of environmental disaster management and civil engineering as I advance in my professional journey.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3 text-primary">Expertise and Interests</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Remote Sensing</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Machine Learning</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Hydrological Modeling</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Climate Change Variables</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Surface Water and Flood Detection</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Vegetation Dynamics</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3 text-primary">Computer Skills</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Python</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>R Programming</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>Google Earth Engine (GEE)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>GIS Software</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>MATLAB</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-accent mr-2"><i class="fas fa-check-circle"></i></span>
+                                    <span>High Performance Computing (HPC)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Education</h3>
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">M.Sc., Water and Hydraulic Structures</h4>
+                                    <p class="text-gray-600">Shahrood University of Technology</p>
+                                    <p class="text-gray-600 text-justify">Thesis: “Surface Water Body Detection and Flood Monitoring Using Fusion of Multiple Remote Sensing Data”</p>
+                                    <p class="text-gray-500 text-sm">2018 - 2021</p>
+                                    <p class="text-gray-500 text-sm">Thesis GPA: 4/4</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">B.Sc., Civil Engineer</h4>
+                                    <p class="text-gray-600">The University of Gonabad</p>
+                                    <p class="text-gray-600 text-justify">Thesis: “Investigation of Water Pipelines in Gonabad and Modeling with WaterGEMS”</p>
+                                    <p class="text-gray-500 text-sm">2014 - 2018</p>
+                                    <p class="text-gray-500 text-sm">GPA: 3.45/4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Honors</h3>
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Peer Reviewer of SPEI Journal (Journal of Applied Remote Sensing)</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-award"></i> <!-- "fas fa-star" -->
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Candidate for Best Young Researcher at Shahrood University of Technology (2021)</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-star"></i> <!-- "fas fa-star" -->
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Presenting the article orally in 12 National Civil Congress</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-star"></i> <!-- "fas fa-star" -->
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Ranked 3rd among 15 M.Sc. Student of Water and Hydraulic Structure at Shahrood University of Technology (2021)</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-star"></i> <!-- "fas fa-star" -->
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Organizer of the workshop on the application of machine learning in remote sensing</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 text-accent text-3xl">
+                                    <i class="fas fa-star"></i> <!-- "fas fa-star" -->
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-justify">Organizer of three successful workshops on “professional article writing” and “journal peer review structures”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Experience</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">My journey through academic research and professional experience</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-container pl-8 ml-4 relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item relative mb-12">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <span class="text-sm font-medium text-white bg-primary px-3 py-1 rounded-full absolute top-0 right-0 -mt-3 mr-3">Current</span>
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Active peer reviewer of scientific journals (2021 - Now)</h3>
+                            <h4 class="text-lg font-medium text-gray-700 mb-2">Collaborate with editors to refine manuscript suitability</h4>
+                            <p class="text-gray-600 mb-4"> With five years of active experience as a peer reviewer for Springer and Frontiers journals, I have evaluated numerous manuscripts focusing on the application of remote sensing to environmental issues. My role involved critically assessing research quality, novelty, and methodological rigor, contributing to the advancement of knowledge in this interdisciplinary field. This ongoing engagement has enhanced my understanding of emerging trends and challenges, while also fostering a commitment to maintaining high editorial standards.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Peer Reviewer</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Springer (JARS, JEI)</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Frontiers </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item relative mb-12">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">YouTube Channel</h3>
+                            <p class="text-gray-600 mb-4">Application of Remote Sensing and Machine Learning</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                <li>YouTube channel dedicated to teaching remote sensing applications and techniques to students and professionals.</li>
+                            </ul>
+                            <a href="https://youtube.com/@earthremotesensing?si=CUxyIhehJXJSGv0a" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Visit Channel</span>
+                            </a>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Tutorials</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Remote Sensing</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Earth Observation</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item relative mb-12">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Teaching experiences</h3>
+                            <p class="text-gray-600 mb-4">Application of Remote Sensing Course</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                <li>Shahrood University of Technology (2020-2021)</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Teaching Assistant</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Remote Sensing</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Earth Observation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item relative mb-12">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Workshop Organizer</h3>
+                            <p class="text-gray-600 mb-4">Organized multiple successful workshops:</p>
+                            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                <li>Workshop on the application of machine learning in remote sensing (Detecting Harmful Algal Blooms)</li>
+                                <li>Journal Club course to review and clarify recent articles related to Environment, Remote sensing, and Machine Learning</li>
+                                <li>Three workshops about professional article writing and journal refereeing</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Knowledge Sharing</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item relative">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Certificates</h3>
+                            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                <li>Applications/Limitations of AI and Machine Learning Water Research Foundation</li>
+                                <li>Supervised Learning with Python (Data Camp Course)</li>
+                                <li>Innovative concepts and methods for geoscience, remote sensing and beyond</li>
+                                <li>Satellite Remote Sensing for the Improved Study of Climate Change Impacts on the Water Cycle</li>
+                                <li>Introduction to Cloud Processing of Sentinel Data (organized by MATE, Copernicus DataSpace Ecosystem and CropOM)</li>
+                                <li>GEOframe Winter School 2025 university of trento, Italy</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Machine Learning & AI</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Data Scientist</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Copernicus DataSpace</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">EO</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">GEOframe</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Satellite</span>
+                                <span class="bg-secondary/20 text-primary px-3 py-1 rounded-full text-sm">Remote Sensing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Publications</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">My academic contributions to the fields of remote sensing and environmental science</p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
+                <!-- Publication 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-full md:w-1/6 flex justify-center">
+                            <div class="bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center">
+                                <i class="fas fa-file-alt text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/6">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">A comparison of Machine Learning Methods for Estimation of Snow Density Using Satellite Images</h3>
+                            <p class="text-gray-700 mb-2">Goodarzi, M., Sabaghzadeh, M., Barzkar, A., Niazkar, M., <strong>Saghafi, M.</strong> (2024)</p>
+                            <p class="text-gray-600 mb-3 italic">Water and Environment Journal</p>
+                            <a href="https://doi.org/10.1111/wej.12939" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Publication</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-full md:w-1/6 flex justify-center">
+                            <div class="bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center">
+                                <i class="fas fa-file-alt text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/6">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Sentinel-1 and Sentinel-2 data fusion system for surface water extraction</h3>
+                            <p class="text-gray-700 mb-2"><strong>Saghafi, M.</strong>, Ahmadi, A., & Bigdeli, B. (2021)</p>
+                            <p class="text-gray-600 mb-3 italic">Journal of Applied Remote Sensing, 15(1), 14521</p>
+                            <a href="https://doi.org/10.1117/1.JRS.15.014521" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Publication</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-full md:w-1/6 flex justify-center">
+                            <div class="bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center">
+                                <i class="fas fa-file-alt text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/6">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Detecting Surface Water Using Data Fusion of Optical and Radar Remote Sensing Sensor</h3>
+                            <p class="text-gray-700 mb-2"><strong>Saghafi, M.</strong>, Ahmadi, A., & Bigdeli, B. (2021)</p>
+                            <p class="text-gray-600 mb-3 italic">Journal of Watershed Management Science and Engineering</p>
+                            <a href="http://jwmsei.ir/article-1-1012-fa.html" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Publication</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Projects & Research</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Highlighted projects showcasing my expertise in remote sensing and environmental data science</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/NPZ.png" alt="npz files viewer" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+                            <h3 class="text-black text-xl font-bold px-4 text-center">NPZ files viewer </h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The enhanced NPZ Comparer application provides researchers with a powerful tool for detailed statistical comparison of NumPy arrays. By combining structural comparison with comprehensive statistical analysis and visualization, it enables more nuanced assessment of numerical differences than traditional file comparison utilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">.NPZ files</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Statistical Analysis</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Compare</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/NPZ-Files-Viewer.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/NDVI.png" alt="Dynamics of Vegetation" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Application of R in Remote Sensing (Dynamics of Vegetation)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The use of R in remote sensing offers a powerful and efficient approach to analyzing vegetation dynamics, particularly by utilizing multispectral data from platforms like Sentinel-2. This project illustrates the process of reading, subsetting, and processing Sentinel-2 multispectral imagery with R, emphasizing its capabilities in vegetation analysis. By leveraging established libraries and workflows within the R environment, the study demonstrates techniques to extract key vegetation indices, track temporal changes, and derive insights into ecosystem health. The combination of R’s analytical capabilities with remote sensing data empowers researchers and practitioners to better understand vegetation dynamics, supporting fields such as agriculture, forestry, and environmental monitoring.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Machine Learning</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Climate Change</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NDVI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Time-Series</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Application_of_R_in_RemoteSensing.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/HAB.png" alt="Algal Bloom Detection" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Harmful Algal Bloom Detection</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The project focuses on classifying Harmful Algal Blooms (HAB) using the Sentinel-2 satellite dataset within the Google Earth Engine (GEE) platform. The workflow encompasses several essential steps, starting with the preparation and pre-processing of high-resolution Sentinel-2 imagery to ensure data quality and relevance. The methodology involves calculating a chlorophyll index, a key indicator for detecting and analyzing algal concentrations in aquatic ecosystems. By applying advanced machine learning classification techniques, the project identifies and maps HAB occurrences with greater precision. This approach underscores the integration of remote sensing and computational tools to tackle environmental challenges, providing an efficient and scalable solution for HAB monitoring and management.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Water Quality</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Environmental Monitoring</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">HAB</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Machine Learning</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Harmful_Algal_Bloom_HAB_Classification_Sentinel2_Data.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/BT.png" alt="BT" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Brightness Temperature SMOS Level-3</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The extraction of brightness temperature data from Level 3 SMOS NetCDF files using Python enables researchers to leverage satellite data for various environmental and climatic studies. By utilizing libraries such as netCDF4, numpy, and pandas, this method efficiently retrieves parameters of interest for multiple geographic coordinates. This approach not only enhances data accessibility but also promotes broader applications of satellite-derived observations in understanding terrestrial and marine systems. Future enhancements may involve integrating additional data processing techniques or user interfaces for enhanced usability in research environments.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SMOS</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NetCDF</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Python</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Brightness Temperature</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Level3_SMOS_Brightness_Temperature.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/SM.png" alt="SM" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Soil Moisture & Water Content SMOS Level-3</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Extracting soil moisture, water content, and optical thickness data from Level 3 SMOS (Soil Moisture and Ocean Salinity) NetCDF files involves using Python libraries such as NetCDF4 and NumPy. This process requires first opening the NetCDF file and identifying the relevant variables related to soil moisture and optical thickness. By specifying the desired geographical coordinates, users can subset the data to extract specific measurements. Through careful manipulation of the datasets, one can effectively analyze the soil moisture and water content, providing valuable insights for agronomic and hydrological studies. This method promotes a deeper understanding and application of satellite-derived environmental data.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SMOS</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">soil moisture</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">water content</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">optical thickness</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NetCDF</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Python</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Level3_SMOS_Soil_Moisture.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 6 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/HABs.png" alt="HABs" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Harmful Algal Blooms (HAB) Forecasting</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Harmful algal blooms (HABs) present significant ecological and public health risks, necessitating effective monitoring and management strategies. Recent advancements in machine learning techniques have demonstrated promise in improving change detection of HABs by analyzing extensive datasets from satellite imagery and in situ measurements. These methods allow for the identification of bloom patterns and their dynamics with greater accuracy and timeliness. By utilizing algorithms such as convolutional neural networks and support vector machines, researchers can create predictive models that support early warning systems, ultimately leading to enhanced resource allocation and mitigation efforts to protect water quality and ecosystem health.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">HAB</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Python</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Time Series</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">HAB Indices</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Remote Sensing</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Harmful_Algal_Blooms_Chang_Detection_Using_Machine_Learning_Approache_.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 7 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/SPEI.png" alt="SPI SPEI" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Calculate the SPI SPEI Drought Index</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The process of calculating the Standardized Precipitation Index (SPI) and the Standardized Precipitation Evapotranspiration Index (SPEI) consists of several steps that utilize NetCDF (.nc) files. First, the NetCDF files are read to extract relevant variables, including precipitation and temperature data. Next, graphical plots of the extracted data can be generated to visualize trends. The data is then exported to a .CSV file for further analysis. Subsequently, the SPI is computed using precipitation data over a specified time scale, while the SPEI is calculated by incorporating both precipitation and potential evapotranspiration, enabling a comprehensive assessment of drought conditions.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SPI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SPEI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NetCDF</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/SPI_SPEI_NetCDF.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 8 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/SDI.png" alt="SDI" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">SDI Streamflow Drought</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The Streamflow Drought Index (SDI) is an essential tool for evaluating hydrological drought conditions by quantifying streamflow deficits over time. Utilizing the SDI in R enables researchers and water resource managers to apply efficient coding techniques for processing and analyzing streamflow data. By harnessing R's extensive libraries, such as zoo and dplyr, users can compute SDI values, visualize trends, and make informed decisions about water management and conservation strategies. This analytical approach deepens our understanding of drought dynamics and supports proactive measures to alleviate the impacts of water scarcity.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SDI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Drought</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/SDI_Streamflow_Drought_Index.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 9 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/CIMP.png" alt="CIMP" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Shaded Plot for the Climate Model Intercomparison Project (CIMP)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Shaded Plot for Climate Model The Shaded Plot for the Climate Model Intercomparison Project (CMIP) in R serves as a vital visualization tool for comparing outputs from various climate models. By incorporating uncertainty through shading, this technique effectively emphasizes variations among different models, thereby enhancing the interpretability of results. By utilizing packages like ggplot2 and gridExtra, researchers can generate dynamic and informative plots that illustrate model performance over time. This method not only promotes a clearer understanding of climate projections but also supports the evaluation of model robustness, guiding policy decisions and scientific discussions in climate research.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">CIMP</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Shaded Plot</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Brightness Temperature</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Shaded_Plot_CIMP_Models.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 10 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/BFAST.png" alt="BFAST" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Detection of Wildfire Trends Using BFAST Algorithm</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The detection of wildfire trends can be effectively accomplished through the integration of the Normalized Burn Ratio (NBR) index and the Breaks For Additive Season and Trend (BFAST) algorithm. The NBR index acts as a robust tool for identifying burned areas by analyzing satellite imagery, while BFAST aids in detecting abrupt changes in time-series data, enabling researchers to accurately pinpoint disturbances. Implementing these methods in R allows for the visualization of the number of detected disturbances over time, offering critical insights into wildfire patterns and their implications for ecosystem management and policy planning.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NBR</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Landsat5-8</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">R</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">BFAST</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Bfast_NBR.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 11 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/NBR.png" alt="NBR" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Extract NBR index using GEE (SLC issue resolved)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">This code illustrates the extraction of the Normalized Burn Ratio (NBR) over a 20-year period using Landsat-5, Landsat-7, and Landsat-8 imagery within the Google Earth Engine (GEE) platform. To ensure data quality, the Scan Line Corrector (SLC) issue in Landsat-7 imagery was effectively addressed using the focal_mean algorithm. This method guarantees accurate and consistent NBR calculations across the dataset, offering reliable insights for long-term analysis.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NBR</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Landsat-7</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">SLC</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Fire Detection</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/NBR_GEE.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 12 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/LS.png" alt="Land Subsidence" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Land Subsidence using Sentinel-1 and Sentinel-2</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Land subsidence, a significant geohazard, can be effectively monitored using remote sensing techniques such as Synthetic Aperture Radar (SAR) and optical imagery. By utilizing Sentinel-1 and Sentinel-2 data within the Google Earth Engine platform, researchers can analyze reductions in SAR amplitude to pinpoint areas undergoing subsidence. This method enables high-resolution, large-scale assessments, offering critical insights for managing risks related to infrastructure, water resources, and urban development in affected regions. The integration of these datasets provides an efficient and cost-effective solution for continuous monitoring and early detection.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Sentinel-1</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Sentinel-2</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Landsubsidence</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/LandSubsidence.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 13 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/MNDWI.png" alt="MNDWI" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Calculate the Surface Water Area</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The calculation of Surface Water Area using the Modified Normalized Difference Water Index (MNDWI), derived from Sentinel-2 imagery, can be efficiently conducted within Google Earth Engine (GEE). By utilizing the green and shortwave infrared (SWIR) bands, MNDWI enhances water body detection by reducing interference from built-up areas and vegetation. GEE serves as a robust platform for processing large-scale satellite data, facilitating accurate identification and quantification of surface water areas over time. This approach supports environmental monitoring, water resource management, and climate impact assessments.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">MNDWI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Sentinel-2</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Surface Water</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Surface_Water_Area.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 14 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/clim.png" alt="Indices" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Extract Environmental Index using GEE</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The extraction of climate indices is essential for monitoring and understanding environmental changes over time. Using Landsat-8 satellite imagery, indices such as the Modified Normalized Difference Water Index (MNDWI), Normalized Difference Vegetation Index (NDVI), Normalized Difference Built-up Index (NDBI), and Normalized Difference Snow Index (NDSI) can be derived to evaluate water bodies, urbanization, and snow cover, respectively. Furthermore, key climatic parameters like precipitation and Land Surface Temperature (LST) can be analyzed to offer insights into regional climate patterns and their variations. By processing and analyzing a decade of Landsat-8 data, these indices empower researchers and policymakers to track long-term environmental trends, assess the impacts of climate change, and plan for sustainable resource management, ensuring data-driven decision-making for environmental resilience.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Landsat-8</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">MNDWI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NDVI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NDBI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">NDSI</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">LST</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Climate_Indices.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 15 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/lst.png" alt="LST" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Land Surface Temperature (LST)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Land Surface Temperature (LST) is a vital parameter for understanding surface energy balance, urban heat island effects, and environmental changes. Using Landsat 8 Surface Reflectance Tier 2 imagery, LST can be calculated and analyzed over time to evaluate temporal and spatial patterns. This process involves deriving LST from the thermal infrared bands of Landsat 8, applying atmospheric corrections, and converting the data into temperature values using established algorithms. By creating an LST time series, researchers can visualize trends, identify anomalies, and monitor changes in land surface conditions. The integration of Landsat 8's high-resolution data with advanced geospatial tools facilitates accurate and detailed analysis, supporting diverse applications in climate studies, urban planning, and environmental monitoring.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">LST</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Landsat</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Land_Surface_Temperature.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 16 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/Flood.png" alt="floods" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">Flood Detection and Flood Area</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Detecting flood inundation and calculating flooded areas is a critical application of remote sensing systems, particularly using Sentinel-1 Synthetic Aperture Radar (SAR) data in Google Earth Engine (GEE). This process involves essential steps to ensure accuracy and precision, starting with filtering and preprocessing the radar imagery to remove irrelevant data and reduce speckle noise, a common issue in SAR datasets. The refined data is then analyzed to differentiate between water bodies and flood-affected areas, leveraging the sensor's capability to penetrate cloud cover and provide consistent observations under all weather conditions. The results are subsequently visualized through GEE's mapping tools, enabling clear identification of impacted regions, and can be exported for further analysis and integration into flood management systems. This workflow offers an efficient and robust approach for detecting floods and estimating their extent, supporting disaster response and mitigation efforts.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Flood Detection</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Time Series</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">GEE</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Sentinel-1</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Threshold</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/Flood_Detection_GEE.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project 17 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="img/1D.png" alt="1-Dimensional-Elasto-Dynamics" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold px-4 text-center">1-Dimensional-Elasto-Dynamics</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">The MATLAB code presented focuses on the numerical solution of 1-dimensional elasto-dynamics problems using the finite element method (FEM). This implementation models the dynamic behavior of elastic materials by discretizing the governing equations into finite elements, allowing for accurate simulation of wave propagation and deformation over time. The code employs standard FEM procedures, including the formulation of stiffness and mass matrices, along with time integration schemes to solve the resulting system of equations. This approach is particularly valuable for analyzing linear elastic systems under dynamic loading, offering an efficient and versatile tool for engineers and researchers in structural dynamics and wave mechanics.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">1D Elasto Dynamics</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">MATLAB</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">FEM</span>
+                            <span class="bg-secondary/10 text-primary/80 px-2 py-1 rounded text-sm">Dynamics and Wave Mechanics</span>
+                        </div>
+                        <a href="https://github.com/MostafaSaghafi/1-dimensional-elasto-dynamics.git" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Get In Touch</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Interested in collaboration or have questions about my research? Reach out to me!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="flex flex-col justify-between">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary">Connect With Me</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="text-accent text-xl mr-4">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p class="text-gray-600">mostafa.saghafi1995@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-accent text-xl mr-4">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Location</h4>
+                                        <p class="text-gray-600">Iran, Tehran</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary">Follow Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/MostafaSaghafi" class="bg-primary/10 hover:bg-primary/20 text-primary w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="http://www.linkedin.com/in/mostafa-saghafi" class="bg-primary/10 hover:bg-primary/20 text-primary w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-linkedin-in text-xl"></i>
+                                </a>
+                                <a href="https://youtube.com/@earthremotesensing?si=CUxyIhehJXJSGv0a" class="bg-primary/10 hover:bg-primary/20 text-primary w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-youtube text-xl"></i>
+                                </a>
+                                <a href="https://x.com/Mostafasaghafi1" class="bg-primary/10 hover:bg-primary/20 text-primary w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="https://www.researchgate.net/profile/Mostafa-Saghafi-2" class="bg-primary/10 hover:bg-primary/20 text-primary w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fa-brands fa-researchgate text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 bg-primary/5 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Research Collaboration</h3>
+                        <p class="text-gray-700 mb-4">I'm always open to research collaborations in the fields of remote sensing, environmental monitoring, and machine learning applications.</p>
+                        <a href="#" class="text-accent hover:underline flex items-center gap-2 font-medium">
+                            <i class="fas fa-handshake"></i>
+                            <span>Collaboration Opportunities</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Mostafa Saghafi</h3>
+                    <p class="mb-6 text-gray-200">Environmental Data Scientist & Remote Sensing Specialist focused on applying machine learning to solve environmental challenges.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/MostafaSaghafi" class="text-white hover:text-accent transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/mostafa-saghafi" class="text-white hover:text-accent transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://youtube.com/@earthremotesensing?si=CUxyIhehJXJSGv0a" class="text-white hover:text-accent transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="https://x.com/Mostafasaghafi1" class="text-white hover:text-accent transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-200 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-200 hover:text-white transition">About</a></li>
+                        <li><a href="#experience" class="text-gray-200 hover:text-white transition">Experience</a></li>
+                        <li><a href="#publications" class="text-gray-200 hover:text-white transition">Publications</a></li>
+                        <li><a href="#projects" class="text-gray-200 hover:text-white transition">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-200 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Research Areas</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Remote Sensing</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Machine Learning</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Climate Change</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Hydrological Models</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Surface Water & Flood Detection</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Time Series Analysis</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Data Fusion and Decision making</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white transition">Land Subsidence (InSAR) </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm mb-4 md:mb-0">© 2025 Mostafa Saghafi. All rights reserved.</p>
+                <a href="#home" class="bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition duration-300">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a nav item
+        const mobileNavItems = mobileMenu.querySelectorAll('a');
+        mobileNavItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<script>window.parent.postMessage({ action: "ready" }, "*"); 
+ 
+window.console = new Proxy(console, {
+  get(target, prop) {
+    if (['log', 'warn', 'error'].includes(prop)) {
+      return new Proxy(target[prop], {
+        apply(fn, thisArg, args) {
+          fn.apply(thisArg, args);
+          window.parent.postMessage({ action: 'console', 
+            type: prop, 
+            args: args.map((arg) => {
+              try {
+                return JSON.stringify(arg).replace(/^["']|["']$/g, '');
+              } catch (e) {
+                return arg;
+              }
+            }) 
+          }, '*');
+        }
+      });
+    }
+    return target[prop];
+  }
+});
+</script></body>
+</html>
